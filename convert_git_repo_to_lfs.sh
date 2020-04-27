@@ -22,5 +22,5 @@ cd - && \
 git clone "${REPO}" "${REPO_DIR}" && \
 cd "${REPO_DIR}" && \
 git reset --hard origin/master && \
-git lfs track $(printf "*.%s " ${EXTS_ARRAY[@]})
+git lfs track $(printf "*.%s " ${CLEAN_EXTS[@]})
 
